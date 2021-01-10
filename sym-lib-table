@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name teensy)(type Legacy)(uri C:/Users/mquezada/Documents/KiCAD/library/Teensy/teensy.lib)(options "")(descr ""))
+  (lib (name Marco)(type Legacy)(uri C:/Users/mquezada/Documents/KiCAD/library/Marco/Marco.lib)(options "")(descr ""))
+  (lib (name PiTFT-eagle-import)(type Legacy)(uri C:/Users/mquezada/Documents/KiCAD/PiTFT/PiTFT-eagle-import.lib)(options "")(descr ""))
+  (lib (name MarcoK)(type Legacy)(uri C:/Users/mquezada/Documents/KiCAD/library/MarcoK.pretty/MarcoK.lib)(options "")(descr ""))
+  (lib (name CPU-eagle-import)(type Legacy)(uri C:/Users/mquezada/Documents/KiCAD/CR101/CPU/CPU-eagle-import.lib)(options "")(descr ""))
+)
