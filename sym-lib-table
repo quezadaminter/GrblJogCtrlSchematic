@@ -4,4 +4,5 @@
   (lib (name PiTFT-eagle-import)(type Legacy)(uri C:/Users/mquezada/Documents/KiCAD/PiTFT/PiTFT-eagle-import.lib)(options "")(descr ""))
   (lib (name MarcoK)(type Legacy)(uri C:/Users/mquezada/Documents/KiCAD/library/MarcoK.pretty/MarcoK.lib)(options "")(descr ""))
   (lib (name CPU-eagle-import)(type Legacy)(uri C:/Users/mquezada/Documents/KiCAD/CR101/CPU/CPU-eagle-import.lib)(options "")(descr ""))
+  (lib (name XCarveDRO-rescue)(type Legacy)(uri ${KIPRJMOD}/XCarveDRO-rescue.lib)(options "")(descr ""))
 )

@@ -544,7 +544,7 @@ Wire Notes Line
 Wire Notes Line
 	3950 850  8100 850 
 $Comp
-L Connector:USB_A J103
+L XCarveDRO-rescue:USB_A-Connector J103
 U 1 1 5FADCB7A
 P 3800 5800
 F 0 "J103" H 3857 6267 50  0000 C CNN
@@ -575,14 +575,14 @@ Wire Notes Line
 	11100 6100 11100 5350
 Wire Notes Line
 	11100 5350 6950 5350
-Text Notes 700  900  0    79   ~ 0
-DP101 Can be ordered from OshPark:\nhttps://oshpark.com/shared_projects/djFs49lT
+Text Notes 650  1100 0    79   ~ 0
+DP101 Can be ordered from OshPark:\nhttps://oshpark.com/shared_projects/ZNeN5t92\nThis breakout includes R101 and Q1 so they\ncan be ignored in this schematic.
 Wire Notes Line
-	650  600  650  1000
+	650  1100 3600 1100
 Wire Notes Line
-	650  1000 3600 1000
+	3600 600  3600 1100
 Wire Notes Line
-	3600 1000 3600 600 
+	650  600  650  1100
 Wire Notes Line
-	3600 600  650  600 
+	650  600  3600 600 
 $EndSCHEMATC
