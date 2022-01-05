@@ -5,7 +5,7 @@ This is in the form of a KiCAD project.
 
 The microcontroller board used (Teensy 4.1): https://www.pjrc.com/store/teensy41.html  
 
-The Display breakout board called out in the schematic can be ordered from OshPark: https://oshpark.com/shared_projects/djFs49lT  
+The Display breakout board called out in the schematic can be ordered from OshPark: https://oshpark.com/shared_projects/ZNeN5t92  
 The TFT LCD I used is from BuyDisplay.com: https://www.buydisplay.com/serial-spi-3-5-inch-tft-lcd-module-in-320x480-optl-touchscreen-ili9488  
 
 I have no affiliation with BuyDislay.com or PJRC.  
