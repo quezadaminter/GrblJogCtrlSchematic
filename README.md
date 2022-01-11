@@ -14,12 +14,14 @@ Write up about the device with pictures and links to demo videos: https://discus
 
 Source code for the Teensy 4.1: https://github.com/quezadaminter/GrblJogCtrl  
 
-# Page 1/2
+# Page 1/3
 ![Screenshot](SVG/XCarveDRO.svg)  
 
-# Page 2/2
+# Page 2/3
 ![Screenshot](SVG/ButtonMatrix-ButtonMatrix.svg)
 
+# Page 3/3
+![Screenshot](SVG/ER-TFT035-6_LCD_Interface-LCD_Interface.svg)
 
 # Parts Used
 1- Teensy 4.1 Development Board.  
