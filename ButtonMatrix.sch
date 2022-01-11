@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
-Title "GRBL Controller - Button Matrix"
-Date ""
-Rev "0"
+Sheet 2 3
+Title "GRBL Controller"
+Date "2022-01-10"
+Rev "1"
 Comp ""
 Comment1 "Button matrix for the GRBL controller."
 Comment2 ""

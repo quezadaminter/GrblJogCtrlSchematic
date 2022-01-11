@@ -3,12 +3,12 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "GRBL Controller"
-Date "2021-01-09"
-Rev "0"
+Date "2022-01-10"
+Rev "1"
 Comp ""
-Comment1 "DP101 is a TFT LCD breakout adapter for the ER-TFT035-6 from BuyDisplay.com"
+Comment1 "MCU, encoder and selector switches."
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -57,50 +57,6 @@ F 3 "~" H 7750 3660 50  0001 C CNN
 F 4 "PEC11L-4120F-S0020-ND" H 7750 3400 50  0001 C CNN "DigiKey"
 	1    7750 3400
 	1    0    0    -1  
-$EndComp
-Text Label 950  3600 0    39   ~ 0
-GND
-Text Label 950  3700 0    39   ~ 0
-GND
-Text Label 950  3100 0    39   ~ 0
-GND
-Text Label 950  2800 0    39   ~ 0
-TFT_DC
-Text Label 950  2600 0    39   ~ 0
-MOSI
-Text Label 950  2700 0    39   ~ 0
-TFT_SCLK
-Text Label 950  2900 0    39   ~ 0
-TFT_CS
-Text Label 950  2400 0    39   ~ 0
-LEDK
-Text Label 950  2300 0    39   ~ 0
-LEDA
-Text Label 950  3300 0    39   ~ 0
-YD
-Text Label 950  3500 0    39   ~ 0
-YU
-Text Label 950  3200 0    39   ~ 0
-XR
-Text Label 950  3400 0    39   ~ 0
-XL
-Text Label 950  2500 0    39   ~ 0
-TFT_RST
-Text Label 950  3000 0    39   ~ 0
-VCC
-$Comp
-L Connector:Conn_01x15_Female J?
-U 1 1 5FBD7E6A
-P 750 3000
-AR Path="/5FBAC065/5FBD7E6A" Ref="J?"  Part="1" 
-AR Path="/5FBD7E6A" Ref="DP101"  Part="1" 
-F 0 "DP101" H 778 3026 50  0000 L CNN
-F 1 "Conn_01x15_Female" H 778 2935 50  0001 L CNN
-F 2 "MarcoK:BUY_LCD_TFT035-6_320x480-BO" H 750 3000 50  0001 C CNN
-F 3 "~" H 750 3000 50  0001 C CNN
-F 4 "https://oshpark.com/shared_projects/djFs49lT" H 750 3000 50  0001 C CNN "OshPArk"
-	1    750  3000
-	-1   0    0    1   
 $EndComp
 $Sheet
 S 8550 2500 850  500 
@@ -364,92 +320,10 @@ NoConn ~ 6800 3800
 NoConn ~ 4600 3700
 NoConn ~ 4600 2400
 NoConn ~ 5550 5850
-$Comp
-L power:GND #PWR0105
-U 1 1 60629CFA
-P 1250 3900
-F 0 "#PWR0105" H 1250 3650 50  0001 C CNN
-F 1 "GND" H 1255 3727 50  0000 C CNN
-F 2 "" H 1250 3900 50  0001 C CNN
-F 3 "" H 1250 3900 50  0001 C CNN
-	1    1250 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L MarcoK:IRLML0040TR Q1
-U 1 1 6062DC4C
-P 2600 1700
-F 0 "Q1" H 2763 1700 59  0000 L CNN
-F 1 "IRLML0040TR" H 2763 1648 59  0001 L CNN
-F 2 "" H 2600 1700 10  0001 C CNN
-F 3 "" H 2600 1700 10  0001 C CNN
-	1    2600 1700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 6063E03D
-P 2600 2100
-F 0 "#PWR0106" H 2600 1850 50  0001 C CNN
-F 1 "GND" H 2605 1927 50  0000 C CNN
-F 2 "" H 2600 2100 50  0001 C CNN
-F 3 "" H 2600 2100 50  0001 C CNN
-	1    2600 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R101
-U 1 1 6063E605
-P 1350 2300
-F 0 "R101" V 1143 2300 50  0000 C CNN
-F 1 "10" V 1234 2300 50  0000 C CNN
-F 2 "" V 1280 2300 50  0001 C CNN
-F 3 "~" H 1350 2300 50  0001 C CNN
-	1    1350 2300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	950  2300 1200 2300
-Text Label 2900 1700 0    39   ~ 0
-TFT_BL
-Wire Wire Line
-	950  3700 1250 3700
-Wire Wire Line
-	1250 3700 1250 3900
-Wire Wire Line
-	950  3600 1250 3600
-Wire Wire Line
-	1250 3600 1250 3700
-Connection ~ 1250 3700
-NoConn ~ 950  3500
-NoConn ~ 950  3400
-NoConn ~ 950  3300
-NoConn ~ 950  3200
-Wire Wire Line
-	950  3100 1250 3100
-Wire Wire Line
-	1250 3100 1250 3600
-Connection ~ 1250 3600
-Wire Wire Line
-	950  2500 4400 2500
-Wire Wire Line
-	4400 2500 4400 3300
 Wire Wire Line
 	4400 3300 4600 3300
 Wire Wire Line
 	4600 3400 4300 3400
-Wire Wire Line
-	4300 3400 4300 2800
-Wire Wire Line
-	4300 2800 950  2800
-Wire Wire Line
-	4600 3500 4250 3500
-Wire Wire Line
-	4250 3500 4250 2900
-Wire Wire Line
-	4250 2900 950  2900
-Wire Wire Line
-	4100 2600 4100 3600
 Wire Wire Line
 	4100 3600 4600 3600
 Wire Wire Line
@@ -475,12 +349,12 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR0107
 U 1 1 606A3138
-P 7250 2100
-F 0 "#PWR0107" H 7250 1950 50  0001 C CNN
-F 1 "+3V3" H 7265 2273 50  0000 C CNN
-F 2 "" H 7250 2100 50  0001 C CNN
-F 3 "" H 7250 2100 50  0001 C CNN
-	1    7250 2100
+P 3850 3550
+F 0 "#PWR0107" H 3850 3400 50  0001 C CNN
+F 1 "+3V3" H 3865 3723 50  0000 C CNN
+F 2 "" H 3850 3550 50  0001 C CNN
+F 3 "" H 3850 3550 50  0001 C CNN
+	1    3850 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -488,39 +362,6 @@ Wire Wire Line
 Wire Wire Line
 	7250 2600 7250 2100
 NoConn ~ 6800 2500
-$Comp
-L power:+3V3 #PWR0108
-U 1 1 606AB99C
-P 1700 2150
-F 0 "#PWR0108" H 1700 2000 50  0001 C CNN
-F 1 "+3V3" H 1715 2323 50  0000 C CNN
-F 2 "" H 1700 2150 50  0001 C CNN
-F 3 "" H 1700 2150 50  0001 C CNN
-	1    1700 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 2300 1700 2300
-Wire Wire Line
-	1700 2300 1700 2150
-Wire Wire Line
-	4000 3800 4000 3000
-Wire Wire Line
-	4000 3000 950  3000
-Wire Wire Line
-	4000 3800 4600 3800
-Wire Wire Line
-	950  2600 4100 2600
-Wire Wire Line
-	2600 2100 2600 1900
-Wire Wire Line
-	950  2400 2150 2400
-Wire Wire Line
-	2150 2400 2150 1350
-Wire Wire Line
-	2150 1350 2600 1350
-Wire Wire Line
-	2600 1350 2600 1500
 Text Label 7250 3300 0    39   ~ 0
 ENC_A
 Text Label 7150 3500 0    39   ~ 0
@@ -533,16 +374,16 @@ Text Label 8200 2750 0    39   ~ 0
 BMCLK
 Text Label 8200 2850 0    39   ~ 0
 BMQH
-Text Notes 4050 1350 0    79   ~ 0
+Text Notes 3850 1050 0    79   ~ 0
 NOTE: The Teensy pin numbers on the schematic\ncorrespond to the board's numbers NOT the Arduino pin numbers.\nThe Arduino pin numbers are listed in the name tag\nof each pin on the schematic symbol for the Teensy 4.1 board.
 Wire Notes Line
-	8100 850  8100 1450
+	7900 550  7900 1150
 Wire Notes Line
-	8100 1450 3950 1450
+	7900 1150 3750 1150
 Wire Notes Line
-	3950 1450 3950 850 
+	3750 1150 3750 550 
 Wire Notes Line
-	3950 850  8100 850 
+	3750 550  7900 550 
 $Comp
 L XCarveDRO-rescue:USB_A-Connector J103
 U 1 1 5FADCB7A
@@ -575,14 +416,73 @@ Wire Notes Line
 	11100 6100 11100 5350
 Wire Notes Line
 	11100 5350 6950 5350
-Text Notes 650  1100 0    79   ~ 0
-DP101 Can be ordered from OshPark:\nhttps://oshpark.com/shared_projects/ZNeN5t92\nThis breakout includes R101 and Q1 so they\ncan be ignored in this schematic.
+$Sheet
+S 1500 1900 1000 1000
+U 61DD28D7
+F0 "LCD_Interface" 59
+F1 "ER-TFT035-6_LCD_Interface.sch" 59
+F2 "LEDA" I R 2500 1950 39 
+F3 "LEDK" I R 2500 2100 39 
+F4 "TFT_RST" I R 2500 2250 39 
+F5 "MOSI" I R 2500 2400 39 
+F6 "TFT_SCLK" I R 2500 2550 39 
+F7 "TFT_DC" I R 2500 2700 39 
+F8 "TFT_CS" I R 2500 2850 39 
+F9 "XR_SCL" I L 1500 2050 39 
+F10 "YD_SDA" I L 1500 2250 39 
+F11 "XL_~TIRQ" I L 1500 2450 39 
+F12 "YU_~TRST" I L 1500 2650 39 
+$EndSheet
+NoConn ~ 1500 2050
+NoConn ~ 1500 2250
+NoConn ~ 1500 2450
+NoConn ~ 1500 2650
+NoConn ~ 2500 1950
+Text Label 2500 2100 0    39   ~ 0
+TFT_BL
+Text Label 2500 2550 0    39   ~ 0
+TFT_SCLK
+Wire Wire Line
+	2500 2250 4400 2250
+Wire Wire Line
+	4400 2250 4400 3300
+Wire Wire Line
+	2500 2400 4100 2400
+Wire Wire Line
+	4100 2400 4100 3600
+Wire Wire Line
+	2500 2700 4300 2700
+Wire Wire Line
+	4300 2700 4300 3400
+Wire Wire Line
+	2500 2850 4200 2850
+Wire Wire Line
+	4200 2850 4200 3500
+Wire Wire Line
+	4200 3500 4600 3500
+Wire Wire Line
+	3850 3550 3850 3800
+Wire Wire Line
+	3850 3800 4600 3800
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61F3878F
+P 7250 2100
+F 0 "#PWR?" H 7250 1950 50  0001 C CNN
+F 1 "+3V3" H 7265 2273 50  0000 C CNN
+F 2 "" H 7250 2100 50  0001 C CNN
+F 3 "" H 7250 2100 50  0001 C CNN
+	1    7250 2100
+	1    0    0    -1  
+$EndComp
 Wire Notes Line
-	650  1100 3600 1100
+	650  1250 3600 1250
 Wire Notes Line
-	3600 600  3600 1100
+	650  1250 650  1750
 Wire Notes Line
-	650  600  650  1100
+	3600 1250 3600 1750
 Wire Notes Line
-	650  600  3600 600 
+	650  1750 3600 1750
+Text Notes 650  1650 0    79   ~ 0
+LCD_Interface Can be ordered from OshPark\nas a breakout board:\nhttps://oshpark.com/shared_projects/ZNeN5t92
 $EndSCHEMATC
