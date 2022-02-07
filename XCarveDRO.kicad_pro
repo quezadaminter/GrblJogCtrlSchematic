@@ -321,12 +321,16 @@
       ""
     ],
     [
+      "00000000-0000-0000-0000-00005ffb9c89",
+      "ButtonMatrix"
+    ],
+    [
       "00000000-0000-0000-0000-000061dd28d7",
       "LCD_Interface"
     ],
     [
-      "00000000-0000-0000-0000-00005ffb9c89",
-      "ButtonMatrix"
+      "f178515b-b448-485d-b4f3-17f976e8a7a0",
+      "EncoderOption"
     ]
   ],
   "text_variables": {}
